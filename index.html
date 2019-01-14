@@ -15,7 +15,37 @@
  <div class="container">
      <h1>JS Issue Tracker <span>by Eng.Esraa</span></h1>
      <div class="issue">
-
+      <h2>Add New Issue:</h2>
+      <div class="issue__fields">
+            <h3 >description</h3>
+            <input type="text" placeholder="Descrip the issue" id="issue__description">
+            <h3>severity</h3>
+            <select name="" id="issue__severity">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <h3>assigned to</h3>
+            <input type="text" placeholder="Enter responsible..." id="issue__respon">
+            <button class="btn-add">Add</button>
+      </div>
+       
+     </div>
+     <div class="issues__list">
+        <div id="issue-0" class="issue__item">
+          <p>Issue ID: <span class="issue__item--id"></span></p>
+          <span class="issue__item--status">open</span>
+          <h3 class="issue__item--description">Delete function for the issue item doesn't work.</h3>
+          <div>
+          <img src="images/data.png" alt="">
+          <span class="issue__item--severity">Low</span>
+          <span>&nbsp;</span>
+          <img src="images/user.png" alt="">
+          <span class="issue__item--responsible">Esraa</span>
+        </div>
+          <button class="btn-close">Close</button>
+          <button class="btn-del">Delete</button>
+        </div> 
      </div>
  </div>
     <script src="main.js"></script>
